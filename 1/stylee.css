@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+
+    /* Background image for the entire page */
+    background: url('background.jpg') no-repeat center center fixed; /* Replace 'background.jpg' with your image path */
+    background-size: cover; /* Ensure the image covers the entire page */
+}
+
+/* Navigation menu styles */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.fixed-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-nav li {
+    margin: 0 15px;
+}
+
+.fixed-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.fixed-nav a:hover,
+.fixed-nav a.active {
+    background-color: #575757;
+    color: #f39c12;
+    border-radius: 5px;
+}
+
+/* Section styling */
+section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    margin-top: 60px; /* Prevent content overlap with the fixed menu */
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Background images for each section */
+#home {
+    background: url('img1.jpg') no-repeat center center; /* Replace 'home-bg.jpg' with your image path */
+    background-size: cover;
+}
+
+#about {
+    background: url('imgg2.jpg') no-repeat center center; /* Replace 'about-bg.jpg' with your image path */
+    background-size: cover;
+}
+
+#services {
+    background: url('imgg3.webp') no-repeat center center; /* Replace 'services-bg.jpg' with your image path */
+    background-size: cover;
+}
+
+#contact {
+    background: url('img4.jpeg') no-repeat center center; /* Replace 'contact-bg.jpg' with your image path */
+    background-size: cover;
+}
+
+/* Heading and paragraph styling for sections */
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fixed-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fixed-nav li {
+        margin: 5px 0;
+    }
+
+    section h1 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
